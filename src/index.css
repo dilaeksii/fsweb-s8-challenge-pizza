@@ -62,12 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
-.header-title {
-    /* font-family: "Barlow Condensed", sans-serif; */
-    color: white;
-    padding-top: 1rem;
-}
-
 .form-header {
     background-color: #CE2829;
     display: flex;
@@ -135,5 +129,235 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
 }
 
+.bottom-line {
+  width: 70%;          
+  border-bottom: 2px solid #5F5F5F;
+  margin-top: 1rem;
+  margin-left: 10rem;
+}
 
+.order-price {
+  border: 1px solid #5F5F5F;
+  width: 30%;
+  margin-left: 40.5rem;
+  border-radius: 0.5rem;
+}
 
+.order-price h6 {
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  margin-right: 8rem;
+}
+
+.order-price div {
+  display: flex;
+  justify-content: space-around;
+}
+.order-price Button {
+  width: 100%;
+}
+
+.kucuk, .buyuk {
+  margin-left: -2rem;
+}
+
+.orta {
+  margin-left: -2.9rem;
+}
+
+.thickness h4 span {
+  margin-right: 9rem;
+}
+
+.extra {
+   margin-top: 3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-left: 10rem;
+}
+
+.extra h4 {
+  margin-bottom: 0.5rem;
+}
+
+.namesurname {
+  margin-right: 49rem;
+  margin-top: 3rem;
+}
+
+.adsoyad {
+  width: 30%;
+}
+
+.form-header img {
+  height: 2rem;
+  margin-top: 1rem;
+}
+
+.note {
+  margin-right: 47.5rem;
+  margin-top: 3rem;
+}
+
+#exampleText {
+  width: 70%;
+  margin-left: 10rem;
+}
+
+.less, .more {
+  width: 8rem;
+  border-radius: 1px solid #5F5F5F;
+  height: 2rem;
+  margin-top: -12rem;
+  border-radius: 0.5rem;
+}
+
+.count-order {
+  width: 8rem;
+  height: 2rem;
+  border-top: 1px solid #5F5F5F;
+  border-bottom: 1px solid #5F5F5F;
+  margin-top: -12rem;
+  border-radius: 0.5rem;
+}
+
+.total-order {
+  display: flex;
+  margin-left: 10rem;
+  margin-bottom: 30rem;
+}
+
+.buttonorder {
+  margin-left: 28rem;
+  width: 30%;
+}
+
+.form-select {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  } 
+
+  .form-header nav {
+    padding-left: 1rem;
+    gap: 0rem;
+  }
+  .main {
+    width: 80vw;
+  }
+
+  .main h3 {
+    padding-left: 1rem;
+  }
+
+  .main-price {
+    padding-left: 1rem;
+  }
+
+  .food-rating {
+    padding-left: 10rem;
+  }
+
+  .rate {
+    padding-left: 1rem;
+  }
+
+  .description {
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+
+  .pizza-selection {
+    margin-left: 1rem;
+    gap: 2rem;
+    width: max-content;
+  }
+
+  .form-select {
+    width: auto;
+  }
+  
+  .extra {
+    margin-left: 1rem;
+  }
+
+  .extra p, .note {
+    white-space: nowrap;
+  }
+
+  .ingredients {
+    gap: 1rem;
+    width: 80%;
+  }
+
+  .namesurname {
+    margin-right: 0;
+  }
+
+  .adsoyad {
+    width: 100%;
+  }
+
+  .note {
+    margin-left: 1rem;
+  }
+
+  #exampleText {
+    width: 95%;
+    margin-left: 1rem;
+  }
+
+  .bottom-line {
+    width: 95%;
+    margin-left: 1rem;
+  }
+
+  .order-price {
+    margin-left: 1rem;
+    width: 95%;
+  }
+
+  .buttonorder {
+    width: 30%;
+    margin-left: 13rem;
+    margin-top: 1rem;
+    padding-top: 0.1rem;
+    padding-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+  
+  .less, .more {
+    margin-top: -2rem;
+  }
+
+  .less {
+    margin-left: -8.5rem;
+    width: 35%;
+  }
+
+  .more {
+    margin-left: -0.1rem;
+    width: 35%;
+  }
+
+  .count-order {
+    margin-top: -2rem;
+    width: 35%;
+  }
+
+  .order-price div {
+    justify-content: space-between;
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
+  }
+}

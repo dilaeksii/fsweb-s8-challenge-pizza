@@ -1,7 +1,10 @@
-const OrderPizzaHeader = () => {
+import logo from "/images/iteration-1-images/logo.svg"
+
+
+const Header = () => {
   return (
     <header className="form-header">
-      <h1 className="header-title">Teknolojik Yemekler</h1>
+      <img src={logo} alt=""/>
       <nav>
         <a href="#">Anasayfa</a><span style={{color: "white"}}>-</span>
         <a href="#">Seçenekler</a><span style={{color: "white"}}>-</span>
@@ -11,4 +14,4 @@ const OrderPizzaHeader = () => {
   );
 };
 
-export default OrderPizzaHeader;
+export default Header;
