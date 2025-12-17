@@ -1,6 +1,9 @@
 import { Button } from "reactstrap";
 
-const Footer = () => {
+
+const Footer = ({handleOrderSubmit}) => {
+
+  
   return (
     <div>
          <div className="order-price">
@@ -25,6 +28,8 @@ const Footer = () => {
             color: "black"
           }}
           className="buttonorder"
+          onClick={handleOrderSubmit}
+          type="button"
         >
           Sipariş Ver
         </Button>

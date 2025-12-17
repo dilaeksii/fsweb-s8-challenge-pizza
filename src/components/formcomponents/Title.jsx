@@ -1,6 +1,6 @@
 const Title = () => {
   return (
-    <div className="main">
+    <div className="maintitle">
       <h3>Position Absolute Acı Pizza</h3>
       <div className="main-price">
         <p style={{fontWeight: "bold"}}>85.50₺</p>
