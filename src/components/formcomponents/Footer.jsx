@@ -1,7 +1,7 @@
 import { Button } from "reactstrap";
 
 
-const Footer = ({handleOrderSubmit}) => {
+const Footer = ({handleOrderSubmit, isValid, fiyat}) => {
 
   
   return (
@@ -12,11 +12,11 @@ const Footer = ({handleOrderSubmit}) => {
         </h6>
         <div>
           <p>Seçimler</p>
-          <p>25.00₺</p>
+          <p>{fiyat-100}₺</p>
         </div>
         <div>
           <p style={{ color: "red" }}>Toplam</p>
-          <p style={{ color: "red" }}>110.50₺</p>
+          <p style={{ color: "red" }}>{fiyat}₺</p>
         </div>
         
       </div>
@@ -30,6 +30,7 @@ const Footer = ({handleOrderSubmit}) => {
           className="buttonorder"
           onClick={handleOrderSubmit}
           type="button"
+          disabled={!isValid}
         >
           Sipariş Ver
         </Button>
