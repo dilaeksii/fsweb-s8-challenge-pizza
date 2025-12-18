@@ -13,12 +13,18 @@ import SuccessPage from "./components/Successpage";
 
 
 function App() {
+  const [orderData, setOrderData] = useState(null);
+
   return (
     <Router>
-      <Switch>
+      <Switch>  
         <Route exact path="/" component={HomePage} />
-        <Route path="/order" component={OrderPage} />
-        <Route path="/success" component={SuccessPage} />
+        <Route path="/order" render={(props) => (
+            <OrderPage {...props} setOrderData={setOrderData} />
+          )} />
+        <Route path="/success" render={(props) => (
+            <SuccessPage {...props} orderData={orderData} />
+          )} />
       </Switch>
     </Router>
   );

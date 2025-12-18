@@ -1,6 +1,11 @@
 const Title = () => {
   return (
-    <div className="maintitle">
+    <div className="maintitle" style={{backgroundColor: "#FAF7F2"}}>
+      <nav>
+        <a href="/">Anasayfa</a><span style={{color: "white"}}>-</span>
+        <a href="#">Seçenekler</a><span style={{color: "white"}}>-</span>
+        <a href="/order">Sipariş Oluştur</a>
+      </nav>
       <h3>Position Absolute Acı Pizza</h3>
       <div className="main-price">
         <p style={{fontWeight: "bold"}}>85.50₺</p>

@@ -5,6 +5,7 @@ import Notes from "./formcomponents/Notes";
 import PizzaForm from "./formcomponents/PizzaForm";
 import Title from "./formcomponents/Title";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 let initialErrors = {
   adsoyad: false,
@@ -27,7 +28,7 @@ let initialForm = {
   text: "",
 };
 
-const OrderPage = () => {
+const OrderPage = ({setOrderData}) => {
   const [form, setForm] = useState(initialForm);
   const [isValid, setIsValid] = useState(false);
   const [errors, setErrors] = useState(initialErrors);
@@ -38,17 +39,39 @@ const OrderPage = () => {
   useEffect(() => {
     
     const adsoyad = form.adsoyad.trim().length > 3;
-    const hamur = form.hamur !== "Hamur Kalınlığı" && form.hamur !== "";
+    const hamur = form.hamur !== "--Hamur Kalınlığı--" && form.hamur !== "";
     const malzeme = form.malzeme.length >= 4 && form.malzeme.length <= 10;
 
     setIsValid(adsoyad && hamur && malzeme);
   }, [form]);
 
-  const handleOrderSubmit = (e) => {
-    // burada validasyon + axios post (varsa)
+  const handleOrderSubmit = async (e) => {
     e.preventDefault();
     if (!isValid) return;
+
+    try {
+    const response = await axios.post(
+      "https://reqres.in/api/pizza",
+      {
+        adsoyad: form.adsoyad,
+        boyut: form.boyut,
+        hamur: form.hamur,
+        malzeme: form.malzeme,
+        text: form.text,
+        fiyat: fiyat,
+      },
+      {
+        headers: {
+          "x-api-key": "reqres-free-v1",
+        },
+      }
+    );
+    setOrderData(response.data);
+    console.log("API RESPONSE:", response.data);
     history.push("/success");
+  } catch (error) {
+    console.error("POST HATASI:", error);
+  }
   };
 
   const handleOrderChange = (e) => {
@@ -84,7 +107,7 @@ const OrderPage = () => {
     }
 
     if (name === "hamur") {
-      if (value !== "Hamur Kalınlığı") {
+      if (value !== "--Hamur Kalınlığı--") {
         setErrors({ ...errors, [name]: false });
       } else {
         setErrors({ ...errors, [name]: true });

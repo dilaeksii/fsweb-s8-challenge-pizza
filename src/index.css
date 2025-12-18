@@ -8,6 +8,7 @@
   margin: 0;
 }
 
+
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -150,10 +151,8 @@ body {
 }
 
 .order-price {
-  border: 1px solid #5F5F5F;
   width: 30%;
   margin-left: 40.5rem;
-  border-radius: 0.5rem;
 }
 
 .order-price h6 {
@@ -238,7 +237,7 @@ body {
 .total-order {
   display: flex;
   margin-left: 10rem;
-  margin-bottom: 30rem;
+  margin-bottom: 5rem;
 }
 
 .btn.buttonorder {
@@ -332,6 +331,413 @@ body {
   font-size: 2rem;
 }
 
+.order-detail {
+  text-transform: capitalize;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 8rem;
+}
+
+.overall-price {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  width: 70%;
+  margin: 2rem 7rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.overall-price h6 {
+  text-align: left;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+}
+
+.price-row p {
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+}
+
+.order-top {
+  margin-bottom: -1.5rem;
+}
+
+.order-main {
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin-left: 4rem;
+}
+
+.ingredients input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #FAF7F2;
+}
+
+.ingredients label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  gap: 10px;
+  user-select: none;
+}
+
+
+.ingredients input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.ingredients .checkmark {
+  width: 25px;
+  height: 25px;
+  background-color: #FAF7F2;
+  border-radius: 4px;
+  position: relative;
+}
+
+
+.ingredients input:checked ~ .checkmark {
+  background-color: #FDC913;
+}
+
+
+.ingredients .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+
+  left: 8px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+
+  border: solid #5F5F5F;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+.ingredients input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.size-options{
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.size-item{
+  position: relative;
+}
+
+
+.size-item input[type="radio"]{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.size-item label{
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #f6f1ea;   
+  color: #5c5c5c;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+
+.size-item input[type="radio"]:checked + label{
+  background: #f2c94c;  
+  color: #000;
+}
+
+.breadcrumb a {
+  color: #5F5F5F;
+  text-decoration: none;
+}
+
+.maintitle nav a {
+  text-decoration: none;
+  color: #5F5F5F;
+  float: left;
+  padding-left: 10rem;
+}
+
+.pills-tab {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+  width: 100vw;
+  margin-left: -8rem;
+}
+
+.pills-tab a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.left {
+  background-image: url("images/iteration-2-images/cta/kart-1.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  flex: 1;
+}
+
+.right-top {
+  background-image: url("images/iteration-2-images/cta/kart-2.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  border-radius: 0.75rem;
+  display: flex;
+  height: 50%;
+  flex: 1;
+}
+
+.right-bottom {
+  background-image: url("images/iteration-2-images/cta/kart-3.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  border-radius: 0.75rem; 
+  display: flex;
+  height: 50%;
+  flex: 1;
+}
+
+.home {
+  display: flex;
+  margin: 2rem 15rem;
+  padding-top: 2rem;
+  height: 150%;
+  gap: 1rem;
+}
+
+.middlePart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.tabtab{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:nowrap;
+  overflow-x:auto;
+  padding:1rem 0;
+  box-sizing:border-box;
+}
+
+.tabtab a{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center;
+  justify-content:center;
+  gap:.75rem;
+
+  background:#fff;
+  border-radius:999px;
+  padding:.75rem 1.25rem;
+
+  white-space:nowrap;
+  min-width:max-content;
+  line-height:1;
+
+  text-decoration:none;
+  color:#000;
+}
+
+.tabtab a img{
+  width:32px;
+  height:32px;
+  display:block;
+  flex:0 0 32px;
+}
+
+.tabtab::-webkit-scrollbar{height:6px;}
+
+
+.food-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 3rem;
+}
+
+.terminalpizza-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.terminalpizza-tab .price {
+  display: flex;
+  justify-content: space-around;
+}
+
+.absolutepizza-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.absolutepizza-tab .price {
+  display: flex;
+  justify-content: space-around; 
+}
+
+.burger-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.burger-tab .price {
+  display: flex;
+  justify-content: space-around;
+}
+
+.address {
+  list-style-image: url("/images/iteration-2-images/footer/icons/icon-1.png");
+}
+
+.mail {
+  list-style-image: url("images/iteration-2-images/footer/icons/icon-2.png");
+}
+
+.phone {
+  list-style-image: url("images/iteration-2-images/footer/icons/icon-3.png");
+}
+
+footer {
+  background: #1f1f1f;
+  color: #fff;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .maindiv {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+footer h1,
+footer h2 {
+  margin: 0 0 1.25rem 0;
+  color: #fff;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .address,
+footer .mail,
+footer .phone {
+  margin: 0 0 1rem 0;
+  padding-left: 2.25rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  list-style-position: outside;
+}
+
+footer .menu li {
+  margin: 0.6rem 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+footer .insta-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 96px);
+  gap: 12px;
+  margin-top: 1.25rem;
+}
+
+footer .insta-photos img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+footer .footer-bottom,
+footer .bottomdiv,
+footer .copyright {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
 
 @media (max-width: 768px) {
   * {
@@ -373,10 +779,19 @@ body {
     padding-right: 0;
   }
 
-  .pizza-selection {
-    margin-left: 1rem;
-    gap: 2rem;
-    width: max-content;
+   .pizza-selection{
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 1rem;   /* senin media'daki margin-left'i de iptal */
+    width: 100%;
+  }
+
+  .size h4 {
+    margin-right: 13.4rem;
+  }
+
+  .thickness h4 {
+    margin-left: -4rem;
   }
 
   .form-select {
@@ -397,7 +812,7 @@ body {
   }
 
   .namesurname {
-    margin-right: 0;
+    margin-right: 8rem;
   }
 
   .adsoyad {
@@ -472,5 +887,38 @@ body {
     margin-left: -2rem;
   }
 
+  .order-main {
+  margin-left: 2.5rem;
+  }
+
+  .order-detail {
+    display: block;
+    margin-right: 7rem;
+  }
+
+  .overall-price {
+    margin-left: 4rem;
+  }
+
+  .ingredients label {
+    display: flex;
+    align-items: center;     
+    gap: 12px;              
+    line-height: 1.2;
+  }
+
+  .ingredients .checkmark {
+    flex: 0 0 25px;          
+    width: 25px;
+    height: 25px;
+  }
+
+  .ingredients label {
+    white-space: normal;
+  }
+
+  .maintitle nav a {
+  padding-left: 0.8rem;
+}
  
 }
