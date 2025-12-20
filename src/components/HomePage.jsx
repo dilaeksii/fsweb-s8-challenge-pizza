@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
+    <div style={{ backgroundColor: "#FAF7F2" }}>
       <section className="main">
         <img src={logo} alt="" />
         <div className="commercial-main">
@@ -12,7 +13,7 @@ const HomePage = () => {
           <div className="promo-main">
             KOD ACIKTIRIR<span>PIZZA, DOYURUR</span>
           </div>
-          <div className="button">
+          <div className="button" data-cy="orderbutton">
             <Link to="/order">Acıktım</Link>
           </div>
         </div>
@@ -191,6 +192,7 @@ const HomePage = () => {
       <i className="fa-brands fa-twitter" style={{color: "white"}}></i>
     </div>
    </footer>
+   </div>
     </>
   );
 };

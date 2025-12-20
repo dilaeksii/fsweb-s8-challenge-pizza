@@ -1,5 +1,7 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -7,7 +9,6 @@
 * {
   margin: 0;
 }
-
 
 /* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
@@ -24,18 +25,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -43,14 +57,20 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -65,7 +85,8 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -75,12 +96,11 @@ body {
   margin: 0;
 }
 
-
 .form-header {
-    background-color: #CE2829;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  background-color: #ce2829;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .form-header nav {
@@ -90,13 +110,13 @@ body {
 }
 
 .form-header nav a {
-    color: white; 
-    text-decoration: none;
-    padding-bottom: 0.75rem;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 0.75rem;
 }
 
 .form-header nav a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .maintitle h3 {
@@ -109,7 +129,7 @@ body {
 .main-price {
   display: flex;
   padding-left: 10rem;
-  padding-right: 10rem;  
+  padding-right: 10rem;
   justify-content: space-between;
 }
 
@@ -131,10 +151,10 @@ body {
 }
 
 .ingredients {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 2rem;
-   width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 90%;
 }
 
 .ingredients label {
@@ -144,8 +164,8 @@ body {
 }
 
 .bottom-line {
-  width: 70%;          
-  border-bottom: 2px solid #5F5F5F;
+  width: 70%;
+  border-bottom: 2px solid #5f5f5f;
   margin-top: 1rem;
   margin-left: 10rem;
 }
@@ -169,7 +189,8 @@ body {
   width: 100%;
 }
 
-.kucuk, .buyuk {
+.kucuk,
+.buyuk {
   margin-left: -2rem;
 }
 
@@ -182,11 +203,11 @@ body {
 }
 
 .extra {
-   margin-top: 3rem;
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   margin-left: 10rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10rem;
 }
 
 .extra h4 {
@@ -217,9 +238,10 @@ body {
   margin-left: 10rem;
 }
 
-.btn.less, .btn.more {
+.btn.less,
+.btn.more {
   width: 8rem;
-  border-radius: 1px solid #5F5F5F;
+  border-radius: 1px solid #5f5f5f;
   height: 2rem;
   margin-top: -12rem;
   border-radius: 0.5rem;
@@ -228,8 +250,8 @@ body {
 .count-order {
   width: 8rem;
   height: 2rem;
-  border-top: 1px solid #5F5F5F;
-  border-bottom: 1px solid #5F5F5F;
+  border-top: 1px solid #5f5f5f;
+  border-bottom: 1px solid #5f5f5f;
   margin-top: -12rem;
   border-radius: 0.5rem;
 }
@@ -268,15 +290,15 @@ body {
 }
 
 .promo-top {
-  color: #FDC913;
+  color: #fdc913;
   text-align: center;
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
   font-size: 2rem;
 }
 
 .commercial-main {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   width: 60%;
 }
@@ -284,17 +306,17 @@ body {
 .promo-main {
   color: white;
   font-size: 3rem;
-  font-family: 'Roboto Mono';
+  font-family: "Roboto Mono";
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
 .button {
-  background-color: #FDC913;
+  background-color: #fdc913;
   border-radius: 1rem;
   width: 15%;
-  text-align: center; 
+  text-align: center;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   font-size: 1rem;
@@ -303,18 +325,17 @@ body {
 .button a {
   text-decoration: none;
   color: black;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
 }
 
 .ordersuccess {
-  background-color: #CE2829;
+  background-color: #ce2829;
   width: 100vw;
   min-height: 100vh;
   margin-left: -7.95rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .ordersuccess img {
@@ -356,7 +377,7 @@ body {
 
 .price-row {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -390,7 +411,7 @@ body {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #FAF7F2;
+  background-color: #faf7f2;
 }
 
 .ingredients label {
@@ -402,27 +423,23 @@ body {
   user-select: none;
 }
 
-
 .ingredients input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-
 .ingredients .checkmark {
   width: 25px;
   height: 25px;
-  background-color: #FAF7F2;
+  background-color: #faf7f2;
   border-radius: 4px;
   position: relative;
 }
 
-
 .ingredients input:checked ~ .checkmark {
-  background-color: #FDC913;
+  background-color: #fdc913;
 }
-
 
 .ingredients .checkmark::after {
   content: "";
@@ -434,60 +451,58 @@ body {
   width: 6px;
   height: 12px;
 
-  border: solid #5F5F5F;
+  border: solid #5f5f5f;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-
 
 .ingredients input:checked ~ .checkmark::after {
   display: block;
 }
 
-.size-options{
+.size-options {
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
   align-items: center;
 }
 
-.size-item{
+.size-item {
   position: relative;
 }
 
-
-.size-item input[type="radio"]{
+.size-item input[type="radio"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-.size-item label{
+.size-item label {
   display: grid;
   place-items: center;
   width: 56px;
   height: 56px;
   border-radius: 999px;
-  background: #f6f1ea;   
+  background: #faf7f2;
   color: #5c5c5c;
   cursor: pointer;
   user-select: none;
   font-weight: 600;
 }
 
-.size-item input[type="radio"]:checked + label{
-  background: #f2c94c;  
+.size-item input[type="radio"]:checked + label {
+  background: #f2c94c;
   color: #000;
 }
 
 .breadcrumb a {
-  color: #5F5F5F;
+  color: #5f5f5f;
   text-decoration: none;
 }
 
 .maintitle nav a {
   text-decoration: none;
-  color: #5F5F5F;
+  color: #5f5f5f;
   float: left;
   padding-left: 10rem;
 }
@@ -538,7 +553,7 @@ body {
   background-repeat: no-repeat;
   background-position: cover;
   background-size: cover;
-  border-radius: 0.75rem; 
+  border-radius: 0.75rem;
   display: flex;
   height: 50%;
   flex: 1;
@@ -559,46 +574,47 @@ body {
   margin: 3rem auto;
 }
 
-.tabtab{
-  width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:1rem;
-  flex-wrap:nowrap;
-  overflow-x:auto;
-  padding:1rem 0;
-  box-sizing:border-box;
+.tabtab {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem 0;
+  box-sizing: border-box;
 }
 
-.tabtab a{
-  display:flex !important;
-  flex-direction:row !important;
-  align-items:center;
-  justify-content:center;
-  gap:.75rem;
+.tabtab a {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
 
-  background:#fff;
-  border-radius:999px;
-  padding:.75rem 1.25rem;
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
 
-  white-space:nowrap;
-  min-width:max-content;
-  line-height:1;
+  white-space: nowrap;
+  min-width: max-content;
+  line-height: 1;
 
-  text-decoration:none;
-  color:#000;
+  text-decoration: none;
+  color: #000;
 }
 
-.tabtab a img{
-  width:32px;
-  height:32px;
-  display:block;
-  flex:0 0 32px;
+.tabtab a img {
+  width: 32px;
+  height: 32px;
+  display: block;
+  flex: 0 0 32px;
 }
 
-.tabtab::-webkit-scrollbar{height:6px;}
-
+.tabtab::-webkit-scrollbar {
+  height: 6px;
+}
 
 .food-tabs {
   display: flex;
@@ -632,7 +648,7 @@ body {
 
 .absolutepizza-tab .price {
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 .burger-tab {
@@ -737,8 +753,6 @@ footer .copyright {
   color: rgba(255, 255, 255, 0.75);
 }
 
-
-
 @media (max-width: 768px) {
   * {
     margin: 0;
@@ -746,9 +760,10 @@ footer .copyright {
     box-sizing: border-box;
   }
 
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
-  } 
+  }
 
   .form-header nav {
     padding-left: 1rem;
@@ -779,10 +794,10 @@ footer .copyright {
     padding-right: 0;
   }
 
-   .pizza-selection{
+  .pizza-selection {
     flex-direction: column;
     gap: 1.5rem;
-    margin-left: 1rem;   /* senin media'daki margin-left'i de iptal */
+    margin-left: 1rem; /* senin media'daki margin-left'i de iptal */
     width: 100%;
   }
 
@@ -797,12 +812,13 @@ footer .copyright {
   .form-select {
     width: auto;
   }
-  
+
   .extra {
     margin-left: 1rem;
   }
 
-  .extra p, .note {
+  .extra p,
+  .note {
     white-space: nowrap;
   }
 
@@ -846,8 +862,9 @@ footer .copyright {
     padding-left: 0.2rem;
     margin-right: 0.2rem;
   }
-  
-  .btn.less, .btn.more {
+
+  .btn.less,
+  .btn.more {
     margin-top: -2rem;
   }
 
@@ -888,7 +905,7 @@ footer .copyright {
   }
 
   .order-main {
-  margin-left: 2.5rem;
+    margin-left: 2.5rem;
   }
 
   .order-detail {
@@ -902,13 +919,13 @@ footer .copyright {
 
   .ingredients label {
     display: flex;
-    align-items: center;     
-    gap: 12px;              
+    align-items: center;
+    gap: 12px;
     line-height: 1.2;
   }
 
   .ingredients .checkmark {
-    flex: 0 0 25px;          
+    flex: 0 0 25px;
     width: 25px;
     height: 25px;
   }
@@ -918,7 +935,170 @@ footer .copyright {
   }
 
   .maintitle nav a {
-  padding-left: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .pills-tab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 8px;
+    gap: 0;
+
+    justify-items: center;
+    align-items: center;
+  }
+
+  .pills-tab > * {
+    width: 100%;
+  }
+
+  .hometab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin: 3rem auto;
+    padding: 0;
+  }
+
+  .home > * {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .right-top,
+  .right-bottom {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 180px;
+    padding: 14px;
+    overflow: hidden;
+  }
+
+  .right-top button,
+  .right-bottom button,
+  .right-top .order-btn,
+  .right-bottom .order-btn,
+  .right-top a,
+  .right-bottom a {
+    margin-top: auto;
+  }
+
+  .right-top,
+  .right-bottom {
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .tabtab{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  width:100%;
+  max-width:360px;
+  margin:0 auto;
+  overflow:visible;
+  padding:8px 0;
 }
- 
+.tabtab>a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+}
+
+.food-tabs{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:16px;
+  width:100%;
+  margin:0 auto;
+  padding-top:16px;
+}
+.food-tabs>*{
+  width:100%;
+  max-width:90%;
+  margin:0 auto;
+}
+
+footer{
+  overflow-x:hidden;
+}
+
+footer .maindiv{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  width:100%;
+  padding:24px 16px;
+  box-sizing:border-box;
+  overflow-x:hidden;
+}
+
+footer .maindiv > div{
+  width:100%;
+  max-width:100%;
+}
+
+footer .footer-bottom{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding:16px;
+}
+
+footer .maindiv *{
+  max-width:100%;
+  box-sizing:border-box;
+}
+
+footer img,
+footer svg{
+  max-width:100%;
+  height:auto;
+}
+
+footer .tekfood,
+footer .hotmenu,
+footer .instagram{
+  padding-left:8px;
+  padding-right:8px;
+}
+
+
 }

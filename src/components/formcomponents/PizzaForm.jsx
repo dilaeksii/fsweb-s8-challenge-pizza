@@ -55,6 +55,7 @@ const PizzaForm = ({ errorMsg, errors, handleOrderChange }) => {
             invalid={errors.hamur}
             onChange={handleOrderChange}
             style={{ backgroundColor: "#FAF7F2" }}
+            data-cy="hamurkalınlığı"
           >
             <option defaultValue="hamurkalınlığı">--Hamur Kalınlığı--</option>
             <option value="ince">İnce</option>
@@ -245,6 +246,7 @@ const PizzaForm = ({ errorMsg, errors, handleOrderChange }) => {
             invalid={errors.adsoyad}
             onChange={handleOrderChange}
             style={{ backgroundColor: "#FAF7F2" }}
+            data-cy="nameinput"
           />
           {errors.adsoyad && (
             <FormFeedback className="d-block">{errorMsg.adsoyad}</FormFeedback>

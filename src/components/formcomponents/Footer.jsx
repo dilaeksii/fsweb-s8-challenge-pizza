@@ -1,3 +1,4 @@
+
 import { Button } from "reactstrap";
 
 
@@ -29,6 +30,7 @@ const Footer = ({handleOrderSubmit, isValid, fiyat}) => {
           onClick={handleOrderSubmit}
           type="button"
           disabled={!isValid}
+          data-cy="ordersuccess"
         >
           Sipariş Ver
         </Button>
@@ -48,7 +50,7 @@ const Footer = ({handleOrderSubmit, isValid, fiyat}) => {
           className="count-order"
           style={{backgroundColor: "#FAF7F2"}}
         >
-          1
+          {orderCount}
         </div>
         <Button
           style={{
