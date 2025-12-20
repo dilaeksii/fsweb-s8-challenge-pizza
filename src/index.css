@@ -797,7 +797,7 @@ footer .copyright {
   .pizza-selection {
     flex-direction: column;
     gap: 1.5rem;
-    margin-left: 1rem; /* senin media'daki margin-left'i de iptal */
+    margin-left: 1rem; 
     width: 100%;
   }
 

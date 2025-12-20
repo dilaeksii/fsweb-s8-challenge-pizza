@@ -147,7 +147,7 @@ const HomePage = () => {
       <img src="/images/iteration-2-images/pictures/food-3.png" alt=""/>
       <div>
         <p style={{fontSize: "1.5rem"}}>useEffect Tavuklu Burger</p>
-        <div class="price"><p>4.9</p> <p>(200)</p> <p><b>60₺</b></p></div>
+        <div className="price"><p>4.9</p> <p>(200)</p> <p><b>60₺</b></p></div>
       </div>
     </div>
    </div>

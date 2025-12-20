@@ -50,7 +50,7 @@ const Footer = ({handleOrderSubmit, isValid, fiyat}) => {
           className="count-order"
           style={{backgroundColor: "#FAF7F2"}}
         >
-          {orderCount}
+          1
         </div>
         <Button
           style={{
