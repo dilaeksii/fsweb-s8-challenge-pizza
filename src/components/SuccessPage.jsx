@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SuccessPage = ({ orderData }) => {
   return (
-    <section className="ordersuccess">
+    <section className="ordersuccess" style={{backgroundColor: "#CE2829"}}>
       <img src={logo} alt="" />
       <div className="commercial-success">
         <div

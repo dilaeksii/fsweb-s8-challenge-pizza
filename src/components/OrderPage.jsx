@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import Footer from "./formcomponents/Footer";
 import Header from "./formcomponents/Header";
-import Notes from "./formcomponents/Notes";
 import PizzaForm from "./formcomponents/PizzaForm";
-import Title from "./formcomponents/Title";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 
@@ -118,14 +116,8 @@ const OrderPage = ({setOrderData}) => {
   return (
     <>
       <Header />
-      <Title />
-      <PizzaForm
-        errorMsg={errorMsg}
-        errors={errors}
-        handleOrderChange={handleOrderChange}
-      />
-      <Notes handleOrderChange={handleOrderChange} />
-      <Footer handleOrderSubmit={handleOrderSubmit} isValid={isValid} fiyat={fiyat}/>
+      <PizzaForm errorMsg={errorMsg} errors={errors} handleOrderChange={handleOrderChange} isValid={isValid} fiyat={fiyat} handleOrderSubmit={handleOrderSubmit}/>
+      <Footer />
     </>
   );
 };

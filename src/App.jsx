@@ -11,7 +11,6 @@ import HomePage from "./components/HomePage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SuccessPage from "./components/Successpage";
 
-
 function App() {
   const [orderData, setOrderData] = useState(null);
 
